@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gulzar Fashion — Elegance in Every Thread | Pakistani Winter Collection</title>
+  <meta name="description" content="Gulzar Fashion brings you premium Pakistani wear — digital printed Karandi 3-piece unstitched suits, blending tradition with modern elegance. Cash on delivery nationwide.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#home" class="wordmark" aria-label="Gulzar Fashion home">
+        <span class="wordmark-leaf" aria-hidden="true">&#10047;</span>
+        <span class="wordmark-text">GULZAR<small>FASHION</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home" class="active">Home</a>
+        <a href="#collections">Collections</a>
+        <a href="#story">Our Story</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="sparkle" aria-hidden="true">&#10022;</span>
+    </div>
+  </header>
+
+  <!-- Hero slider -->
+  <section class="hero" id="home" aria-label="Featured collections">
+    <div class="hero-slide active" style="background-image: url('images/product-01.jpg')">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow"><span class="rule"></span>A MODERN HERITAGE<span class="rule"></span></p>
+        <h1 class="hero-title">GULZAR<br><span class="hero-title-sub">FASHION</span></h1>
+        <p class="hero-tagline">Elegance in Every Thread.</p>
+        <a href="#shop" class="btn-outline">EXPLORE COLLECTION <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+    <div class="hero-slide" style="background-image: url('images/product-03.jpg')">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow"><span class="rule"></span>WINTER 2026<span class="rule"></span></p>
+        <h1 class="hero-title">MOTHER<br><span class="hero-title-sub">COLLECTION</span></h1>
+        <p class="hero-tagline">Timeless Prints, Modern Grace.</p>
+        <a href="#shop" class="btn-outline">EXPLORE COLLECTION <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+    <div class="hero-slide" style="background-image: url('images/product-08.jpg')">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow"><span class="rule"></span>KARANDI EDIT<span class="rule"></span></p>
+        <h1 class="hero-title">SOFT<br><span class="hero-title-sub">LUXURY</span></h1>
+        <p class="hero-tagline">Comfort Woven with Beauty.</p>
+        <a href="#shop" class="btn-outline">EXPLORE COLLECTION <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+    <div class="hero-ui">
+      <span class="hero-counter"><span id="heroNum">01</span> / 03</span>
+      <div class="hero-arrows">
+        <button type="button" class="hero-arrow" id="heroPrev" aria-label="Previous slide">&#8592;</button>
+        <button type="button" class="hero-arrow" id="heroNext" aria-label="Next slide">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Collections -->
+  <section class="collections" id="collections">
+    <div class="container">
+      <p class="eyebrow"><span class="rule"></span>OUR COLLECTIONS<span class="rule"></span></p>
+      <h2 class="section-title">Timeless Styles, Modern Grace</h2>
+      <div class="collection-cards">
+        <a href="#shop" class="collection-card">
+          <img src="images/product-02.jpg" alt="3 Piece Collection — complete elegance" loading="lazy">
+          <div class="collection-card-body">
+            <h3>3 Piece<br>Collection</h3>
+            <p class="collection-sub">Complete Elegance</p>
+            <span class="collection-link">VIEW COLLECTION <span aria-hidden="true">&rarr;</span></span>
+          </div>
+        </a>
+        <a href="#shop" class="collection-card">
+          <img src="images/product-05.jpg" alt="2 Piece Collection — simple, stylish, graceful" loading="lazy">
+          <div class="collection-card-body">
+            <h3>2 Piece<br>Collection</h3>
+            <p class="collection-sub">Simple. Stylish. Graceful.</p>
+            <span class="collection-link">VIEW COLLECTION <span aria-hidden="true">&rarr;</span></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product grid -->
+  <section class="shop" id="shop">
+    <div class="container">
+      <p class="eyebrow"><span class="rule"></span>NEW ARRIVALS<span class="rule"></span></p>
+      <h2 class="section-title">Shop the Collection</h2>
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <!-- Trending carousel -->
+  <section class="trending" id="trending">
+    <div class="container">
+      <p class="eyebrow"><span class="rule"></span>TRENDING NOW<span class="rule"></span></p>
+      <h2 class="section-title">Most Loved Pieces</h2>
+    </div>
+    <div class="container carousel-wrap">
+      <button class="carousel-arrow" id="trendPrev" type="button" aria-label="Previous"><span aria-hidden="true">&larr;</span></button>
+      <div class="carousel" id="trendCarousel">
+        <div class="carousel-track" id="trendTrack"></div>
+      </div>
+      <button class="carousel-arrow" id="trendNext" type="button" aria-label="Next"><span aria-hidden="true">&rarr;</span></button>
+    </div>
+    <div class="carousel-dots" id="trendDots"></div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="story">
+    <div class="container about-inner">
+      <div class="about-copy">
+        <p class="eyebrow left">ABOUT GULZAR FASHION <span class="rule"></span></p>
+        <h2 class="section-title left">More Than Fashion,<br>It&rsquo;s a Feeling.</h2>
+        <p class="about-text">Gulzar Fashion brings you premium Pakistani wear, blending tradition with modern elegance.</p>
+        <a href="#shop" class="btn-dark">OUR STORY <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="about-media">
+        <img src="images/product-04.jpg" alt="Gulzar Fashion — premium Pakistani winter wear" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#home" class="wordmark light" aria-label="Gulzar Fashion home">
+          <span class="wordmark-leaf" aria-hidden="true">&#10047;</span>
+          <span class="wordmark-text">GULZAR<small>FASHION</small></span>
+        </a>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#collections">Collections</a>
+          <a href="#story">Our Story</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-social" aria-label="Social links">
+          <span class="social-icon" title="Instagram" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"/></svg></span>
+          <span class="social-icon" title="Facebook" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2-.1-2 0-3.4 1.2-3.4 3.5V11H8.5v3H11v7h2.5z"/></svg></span>
+          <span class="social-icon" title="YouTube" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22 8.2s-.2-1.5-.8-2.1c-.8-.8-1.6-.8-2-.9C16.4 5 12 5 12 5s-4.4 0-7.2.2c-.4.1-1.2.1-2 .9C2.2 6.7 2 8.2 2 8.2S1.8 10 1.8 11.7v1.6C1.8 15 2 16.8 2 16.8s.2 1.5.8 2.1c.8.8 1.8.8 2.2.9 1.6.2 7 .2 7 .2s4.4 0 7.2-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2.1.8-2.1s.2-1.8.2-3.5v-1.6C22.2 10 22 8.2 22 8.2zM10 14.7V9.3l5.2 2.7L10 14.7z"/></svg></span>
+          <span class="social-icon" title="Pinterest" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M9.5 20.5c.5-2 1.5-6 1.5-6M11 14.5c-.5-.8-.8-1.8-.8-2.8 0-2.2 1.6-4.2 4-4.2 1.9 0 3.3 1.3 3.3 3.1 0 2.3-1.4 4.4-3.4 4.4-.7 0-1.4-.4-1.6-1"/></svg></span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Gulzar Fashion. All Rights Reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp (disabled — ordering not active yet) -->
+  <button class="wa-float" type="button" disabled title="WhatsApp ordering coming soon" aria-label="WhatsApp ordering coming soon">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </button>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
